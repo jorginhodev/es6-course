@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>02 - This no Arrow Function</title>
+</head>
+<body>
+  
+  <button id="btn">Click Me!</button>
+
+<script>
+  const btn = document.getElementById('btn');
+  btn.addEventListener('click', function() {
+    console.log('this de uma function:');
+    console.log(this);
+    console.log('--------------------');
+  });
+
+  const btn2 = document.getElementById('btn');
+  btn2.addEventListener('click', () => {
+    console.log('this de uma arrow function:');
+    console.log(this);
+  });
+</script>
+</body>
+</html>
