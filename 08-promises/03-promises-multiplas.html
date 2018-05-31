@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>03 - Promises Múltiplas</title>
+</head>
+<body>
+
+<script>
+  const currency = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({ currency: 'euro', value: 3.50 });
+    }, 5000);
+  });
+
+  const countries = new Promise((resolve, reject) => {
+    resolve(['Ireland', 'England', 'Scotland']);
+  });
+
+  // Promise
+  //     .all([currency, countries])
+  //     .then(responses => {
+  //       console.log(responses);
+  //     });
+
+  Promise
+      .race([currency, countries])
+      .then(responses => {
+        console.log(responses);
+      });
+      
+</script>
+</body>
+</html>
