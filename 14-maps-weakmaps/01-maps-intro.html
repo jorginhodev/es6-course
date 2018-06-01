@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>01 - Maps Intro</title>
+</head>
+<body>
+
+<script>
+  let m = new Map();
+
+  m.set('Jorge', 33);
+  m.set('Willian', 26);
+  m.set('Jonas', 22);
+
+  console.log(m);
+
+  const it = m.values();
+  for(obj of it) {
+    console.log(obj);
+  }
+
+</script>
+</body>
+</html>
