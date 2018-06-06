@@ -2,7 +2,8 @@ const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 
 module.exports = {
-  mode: 'production',
+  mode: 'development',
+  devtool: 'source-map',
   entry: {
     filename: './app.js'
   },
@@ -25,13 +26,13 @@ module.exports = {
   },
   plugins: [
     new UglifyJsPlugin({
+      sourceMap: true,
       uglifyOptions: {
         compress: { warnings: false },
         output: {
           comments: false
         },
-        sourceMap: true
-      }
+      },
     })
   ]
 };
