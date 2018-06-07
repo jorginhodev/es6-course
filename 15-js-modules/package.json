@@ -6,7 +6,7 @@
   "scripts": {
     "build": "./node_modules/.bin/webpack --colors --progress",
     "watch": "npm run build -- --watch",
-    "server": "./node_modules/.bin/webpack-dev-server --watch-content-base --open"
+    "server": "./node_modules/.bin/webpack-dev-server --mode development --open"
   },
   "keywords": [],
   "author": "",
