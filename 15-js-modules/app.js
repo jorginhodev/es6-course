@@ -20,6 +20,6 @@ console.log(arr4);
 
 console.log(soma(3, 2));
 console.log(sub(3, 2));
-console.log(multiplicacao(4, 2));
+console.log(multiplicacao(30, 2));
 console.log(dividir(4, 2));
 console.log(PI);
